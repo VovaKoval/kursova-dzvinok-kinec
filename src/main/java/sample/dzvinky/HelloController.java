@@ -187,7 +187,6 @@ public class HelloController {
     ScheduledExecutorService scheduler;
 
     public void onClick_exit(ActionEvent actionEvent) {
-        quit.setOnAction(event -> {
             try {
                 new MyTimerTask().musicPererva.close();
                 new MyTimerTask().muzicDzvinok.close();
@@ -199,6 +198,5 @@ public class HelloController {
             }
             Stage stage = (Stage) quit.getScene().getWindow();
             stage.close();
-        } );
     }
 }
